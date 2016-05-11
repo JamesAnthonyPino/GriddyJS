@@ -1,0 +1,298 @@
+
+table.Griddy {
+    border: 1px solid #555;
+    
+    border-collapse: collapse;
+    font-family: Arial,helvetica,sans serif;
+    font-size: small;
+}
+
+table.Griddy thead th {
+        
+    /*background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(221,221,221,1) 100%); */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); */
+  	background-color: rgba(200,200,200, 0.1);
+    border: 1px solid rgba(200,200,200, 0.3);
+  	border-bottom: 2px solid rgba(200,200,200, 0.3);	
+    font-weight: bold;
+    padding: 6px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+table.Griddy thead th input.bothSortButton {
+    background-color: transparent;
+    background-image: url("sort_both.png");
+    background-position: 1px 0;
+    background-repeat: no-repeat;
+    background-size: 10px auto;
+    border: medium none;
+    height: 20px;
+    margin-left: 5px;
+    opacity: 0.6;
+    vertical-align: middle;
+    width: 20px;
+}
+
+table.Griddy thead th input.ascSortButton,
+table.Griddy thead th input.descSortButton,
+table.Griddy thead th input.descActiveSortButton,
+table.Griddy thead th input.ascActiveSortButton
+{
+ 	width: 14px;
+  height: 14px;
+  border: none;
+  padding: 7px;  
+  background-repeat: no-repeat;      
+  background-color: transparent;  
+}
+
+
+
+table.Griddy thead th input.ascSortButton {  
+  background-image: url("col_sort_asc_enabled.png");  
+  background-position: bottom;  
+  vertical-align: top;
+}
+
+table.Griddy thead th input.descSortButton {  
+  background-image: url("col_sort_desc_enabled.png");    
+  background-position: top;
+  
+}
+
+
+table.Griddy thead th input.descActiveSortButton {    
+    background-image: url("col_sort_desc_enabled_grn.png");        
+  	background-position: top;
+}
+
+
+table.Griddy thead th input.ascActiveSortButton {    
+    background-image: url("col_sort_asc_enabled_grn.png");    
+  	background-position: bottom;  
+  	vertical-align: top;
+}
+
+
+
+
+table.Griddy thead th div.tableDiv {
+    display: table;
+    width: 100%;  	
+}
+
+table.Griddy thead th div.divLeft {
+    display: table-cell;
+    vertical-align: middle;
+  	padding: 0px;
+  
+}
+
+table.Griddy thead th div.divRight {
+  	
+    display: table-cell;
+    text-align: right;
+  	padding-left: 20px;
+ 		padding-right: 5px; 
+    opacity: 0.7;
+  	
+}
+
+table.Griddy thead th div.divRight div.divRightTop {
+    display: block;
+    text-align: right;
+  	height: 16px;
+    
+  	padding: 0px;  	
+  	
+}
+
+
+table.Griddy thead th div.divRight div.divRightBottom {
+    display: block;
+    text-align: right;
+    
+  	padding: 0px;
+  	height: 16px;
+}
+
+
+table.Griddy thead th input.descSortButton:hover, table.Griddy thead th input.ascSortButton:hover, table.Griddy thead th input.bothSortButton:hover {
+    cursor: pointer;
+}
+table.Griddy tbody td {
+    border: 1px solid rgba(200,200,200, 0.2);
+    padding: 3px 6px;
+}
+table.Griddy tbody tr.odd td {
+    background-color: #fff;
+}
+table.Griddy tbody tr.even td {
+    background-color: #fafafa;
+}
+
+table.Griddy tbody tr.highlightedRow td {
+    background-color: lemonchiffon !important;
+}
+
+
+table.Griddy tbody tr:hover td {
+  background-color: rgba(248,255,144, 0.3);
+}
+
+
+table.Griddy tbody tr td input.editableValue {
+color: #000;
+border: 1px solid #4665b5;
+background-color: #fff;
+padding:2px;
+font-size: 12px;
+font-family: Arial, Helvetica, sans-serif;
+    
+    
+  /*border: 1px solid #ccc;*/
+  /*padding: 1px 3px 1px 3px;*/  
+}
+
+table.Griddy tbody tr td input.modified {
+  background-color: #99CC66;
+}
+
+table.Griddy tbody tr td input.editableValueError {
+  border: 2px solid red !important;
+}
+
+
+
+
+table.Griddy thead.header div.tableToolBar {
+    border-collapse: separate;
+    color: #555;
+    display: table;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 1px;
+    width: 100%;
+}
+table.Griddy thead.header div.tableToolBar img {
+    border: medium none;
+}
+table.Griddy thead.header div.tableToolBar div.left {
+    color: #555;
+    display: table-cell;
+    font-size: 12px;
+    padding-left: 3px;
+    text-align: left;
+    white-space: nowrap;
+    width: 33%;
+}
+table.Griddy thead.header div.tableToolBar div.left span.rowText {
+    padding-right: 10px;
+}
+table.Griddy thead.header div.tableToolBar div.left span.pageText {
+    padding-left: 10px;
+}
+table.Griddy thead.header div.tableToolBar div.center {
+    color: #555;
+    display: table-cell;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    width: 34%;
+}
+table.Griddy thead.header div.tableToolBar div.center span.pageControls {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+table.Griddy thead.header div.tableToolBar div.right {
+    color: #555;
+    display: table-cell;
+    font-size: 12px;
+    text-align: right;
+    white-space: nowrap;
+    width: 33%;
+}
+table.Griddy thead.header div.tableToolBar div.right div.innerRight {
+    display: table;
+    width: 100%;
+}
+table.Griddy thead.header div.tableToolBar div.right div.innerRight div.left {
+    display: table-cell;
+    text-align: left;
+}
+table.Griddy thead.header div.tableToolBar div.right div.innerRight div.right {
+    display: table-cell;
+    padding-left: 20px;
+    text-align: right;
+}
+table.Griddy thead.header input.jump {
+    width: 2em;
+}
+table.Griddy thead.header input.find {
+    width: 3em;
+}
+table.Griddy thead.header input.nav {
+    background-color: transparent;
+    background-position: 1px 0;
+    background-repeat: no-repeat;
+    border: 1px solid transparent;
+    height: 20px;
+    margin-left: 1px;
+    vertical-align: middle;
+    width: 20px;
+}
+table.Griddy thead.header input.nav:hover {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+}
+
+table.Griddy thead.header input.first {
+    background-image: url("icon_first.png");
+    background-size: 10px auto;
+}
+
+table.Griddy thead.header input.first.disabled {
+    background-image: url("icon_first_disabled.png") !important;    
+}
+
+
+table.Griddy thead.header input.prev {
+    background-image: url("icon_back.png");
+    background-size: 8px auto;
+}
+
+table.Griddy thead.header input.prev.disabled {
+    background-image: url("icon_back_disabled.png") !important;    
+}
+
+table.Griddy thead.header input.next {
+    background-image: url("icon_next.png");
+    background-size: 8px auto;
+    margin-left: 5px;
+}
+
+table.Griddy thead.header input.next.disabled {
+    background-image: url("icon_next_disabled.png") !important;    
+}
+
+table.Griddy thead.header input.last {
+    background-image: url("icon_last.png");
+    background-size: 10px auto;
+}
+
+table.Griddy thead.header input.last.disabled {
+    background-image: url("icon_last_disabled.png") !important;
+}
+
+table.Griddy thead.header label {
+    margin-right: 5px;
+}
+
+table.Griddy thead.header input[type=text] {
+    margin-right: 5px;
+}
+
